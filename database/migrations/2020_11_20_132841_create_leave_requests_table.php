@@ -14,8 +14,16 @@ class CreateLeaveRequestsTable extends Migration
     public function up()
     {
         Schema::create('leave_requests', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('user_id');
+            $table->string('user_email');
+            $table->string('leave_type');
+            $table->string('description');
+            $table->time('time');
+            $table->smallInteger('status');
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
 

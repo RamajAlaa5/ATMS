@@ -2,31 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84875a57-f130-4d6f-9b7c-72366430430c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Departments/addDept.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Departments/deleteDept.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Departments/deptsManagement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Departments/editDept.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Departments/showAllDepts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/HeadOfDepartments/addHead.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/HeadOfDepartments/deleteHead.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/HeadOfDepartments/editHead.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/HeadOfDepartments/headsManagement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/HeadOfDepartments/showAllHeads.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/HeadOfDepartments/showProfile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/LeavesRequests/showAllRequests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Questions/addQuestion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Questions/showAllQuestions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Users/showProfile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Department.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/LeaveRequests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Notification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Question.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/QuestionSchedule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_131939_create_departments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_132022_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_132841_create_leave_requests_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_133448_create_questions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_133552_create_question_schedules_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_134127_create_notifications_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/applyForRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/showAppliedRequests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_132625_create_users_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -144,16 +143,25 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kSu6BYsxp5DWb6FMKjNJCEiS3g" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -169,17 +177,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605706136621</updated>
-      <workItem from="1605706137870" duration="896000" />
+      <workItem from="1605706137870" duration="1100000" />
+      <workItem from="1605731883050" duration="357000" />
+      <workItem from="1605783064731" duration="27000" />
+      <workItem from="1605783110881" duration="28000" />
+      <workItem from="1605783552924" duration="300000" />
+      <workItem from="1605878086067" duration="1718000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="485" y="310" key="NewPhpFileDialog" timestamp="1605706693286">
+    <state x="485" y="310" key="NewPhpFileDialog" timestamp="1605878286659">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="485" y="310" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1605706693286" />
+    <state x="485" y="310" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1605878286659" />
+    <state x="376" y="123" width="613" height="522" key="find.popup" timestamp="1605878108551">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="376" y="123" width="613" height="522" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1605878108551" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/database/migrations/2020_11_20_132841_create_leave_requests_table.php</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
