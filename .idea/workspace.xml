@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84875a57-f130-4d6f-9b7c-72366430430c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/Department.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/LeaveRequests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Notification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Question.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/QuestionSchedule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_131939_create_departments_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_132022_create_roles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_132841_create_leave_requests_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_133448_create_questions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_133552_create_question_schedules_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_134127_create_notifications_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/applyForRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/showAppliedRequests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminLoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Departments/DepartmentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Employees/EmployeeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HeadOfDepartments/HeadController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LeavesRequests/LeavesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Questions/QuestionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Head/Departments/DepartmentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Head/Employees/EmployeeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Head/LeavesRequests/LeavesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_132625_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,13 +149,20 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Head" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Head" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Auth" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin/Questions" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin/LeavesRequests" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin/HeadOfDepartments" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,7 +184,9 @@
       <workItem from="1605783064731" duration="27000" />
       <workItem from="1605783110881" duration="28000" />
       <workItem from="1605783552924" duration="300000" />
-      <workItem from="1605878086067" duration="1718000" />
+      <workItem from="1605878086067" duration="1961000" />
+      <workItem from="1605963791798" duration="727000" />
+      <workItem from="1605964639748" duration="397000" />
     </task>
     <servers />
   </component>
@@ -193,10 +197,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="485" y="310" key="NewPhpFileDialog" timestamp="1605878286659">
+    <state x="485" y="310" key="NewPhpFileDialog" timestamp="1605964838776">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="485" y="310" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1605878286659" />
+    <state x="485" y="310" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1605964838776" />
     <state x="376" y="123" width="613" height="522" key="find.popup" timestamp="1605878108551">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

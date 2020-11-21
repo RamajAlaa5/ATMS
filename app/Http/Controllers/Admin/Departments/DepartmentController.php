@@ -1,6 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin\Departments;
+
+use App\Models\Department;
+use Illuminate\Routing\Controller;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +16,7 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
