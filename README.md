@@ -1,4 +1,4 @@
 
-# Attendence Tracking Management System
+# Attendance Tracking Management System
 
 
