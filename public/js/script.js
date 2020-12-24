@@ -10,17 +10,16 @@ $(document).ready(function () {
             $(".navbar-toggler").click();
         }
     });
-    $('#toCheckbox').click(function(){
+    $('#toCheckbox').click(function () {
         $('#dateTo').toggle(200);
     });
-    $('.acceptdeny').click(function(){
+    $('.acceptdeny').click(function () {
         $(this).hide(100);
         $(this).siblings().hide(100);
         $(this).siblings('.reconsider').show(100);
     });
-    $('.reconsider').click(function(){
+    $('.reconsider').click(function () {
         $(this).hide(100);
         $(this).siblings().show(100);
     });
 });
- 
