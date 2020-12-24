@@ -1,4 +1,4 @@
-# ATMSFCI
+# ATMS
  Attendence Tracking Management System
  
  
