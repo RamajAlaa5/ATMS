@@ -2,7 +2,7 @@
  Attendence Tracking Management System
  
  
- How To Use ATMSFCI Repo:<br />
+ How To Use ATMS Repo:<br />
  1  install composer: https://getcomposer.org.<br />
  2  install Laravel through composer.<br />
  3  open XAMPP and run your server.<br />
